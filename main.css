@@ -13,8 +13,18 @@ header {
     border-bottom: 16px solid rgb(66, 11, 118);
     justify-content: center;
     text-transform: uppercase;
+    align-items: center;
     font-style: italic;
+    padding-top: 50px;
 }
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    background-image: url(./images/fundo.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
 
 header button {
     margin-left: 16px;
@@ -49,39 +59,62 @@ button {
     background-color: red;
 }
 
-ul {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-ul li {
-    max-width: 25%;
-    list-style: none;
-    position: relative;
-    padding: 4px;
-}
-
-ul li img {
+table {
     width: 100%;
-    height: 100%;
 }
 
-.overlay-imagem-link {
+table th {
+    border-bottom: 2px solid black;
     padding: 16px;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table td {
+    padding: 16px 0;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0,0, 0, 0.1);
+}
+
+
+table td img {
+    height: 30px;
+}
+
+.container {
+    max-width: 1160px;
     width: 100%;
-    opacity: 0;
-    transition: al ease 0.5s;
+    margin: 0 auto;
+    border-radius: 18px;
+    padding: 18px;
 }
 
-.overlay-imagem-link a {
-    color: #fff;
-    text-decoration: none;
+.listas {
+    display: flex;    
+    justify-content: space-between;
 }
 
-ul li:hover .overlay-imagem-link {
-    opacity: 1;
+.coluna {
+    width: 45%;        
 }
+
+ul {
+    list-style: none;   
+    padding: 0;
+    margin: 0;
+}
+
+.container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+ul li{
+    list-style: none;   
+    padding: 8px;
+    margin: 0;
+}
+
