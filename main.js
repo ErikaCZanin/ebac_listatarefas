@@ -22,7 +22,7 @@ $(document).ready(function() {
 
         // Cria os itens de tarefa e data
         const novaTarefa = $(`<li>${endNovaImg}</li>`);
-        const novaData = $(`<li>${dataFormatada}</li>`); // Usando a data formatada
+        const novaData = $(`<li>${dataFormatada}</li>`);
 
         // Adiciona a nova tarefa e data às suas respectivas listas
         $('#atividade-lista-tarefa').append(novaTarefa);
@@ -31,5 +31,10 @@ $(document).ready(function() {
         // Limpa os campos de input
         $('#endImgN').val('');
         $('#addData').val('');
+    });
+
+    // Usando event delegation para aplicar o clique ao <li> dinâmico
+    $(document).on('click', '#atividade-lista-tarefa li', function() {
+        $(this).toggleClass('riscado');
     });
 });
